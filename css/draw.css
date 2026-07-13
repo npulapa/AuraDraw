@@ -1,0 +1,417 @@
+/* ===========================================
+   AuraDraw - draw.css
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f8ff;
+
+    color:#222;
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#2563eb;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.logo i{
+
+    font-size:30px;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ffd54f;
+
+}
+
+/* ================= PAGE TITLE ================= */
+
+.page-title{
+
+    text-align:center;
+
+    padding:40px 20px 20px;
+
+}
+
+.page-title h1{
+
+    font-size:40px;
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.page-title p{
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+/* ================= TOOLBAR ================= */
+
+.toolbar{
+
+    width:95%;
+
+    max-width:1300px;
+
+    margin:25px auto;
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.toolbar button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.toolbar button:hover{
+
+    background:#1749b3;
+
+    transform:translateY(-2px);
+
+}
+
+.toolbar label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-weight:500;
+
+}
+
+#colorPicker{
+
+    width:45px;
+
+    height:40px;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:none;
+
+}
+
+#brushSize{
+
+    width:140px;
+
+}
+
+/* ================= WORKSPACE ================= */
+
+.workspace{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:30px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.3fr;
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.card h2{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+/* ================= VIDEO ================= */
+
+video{
+
+    width:100%;
+
+    height:420px;
+
+    background:black;
+
+    border-radius:15px;
+
+    object-fit:cover;
+
+}
+
+/* ================= CANVAS ================= */
+
+canvas{
+
+    width:100%;
+
+    height:500px;
+
+    border:3px dashed #2563eb;
+
+    border-radius:15px;
+
+    cursor:crosshair;
+
+    background:white;
+
+}
+
+/* ================= CAPTURE ================= */
+
+#captureBtn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#captureBtn:hover{
+
+    background:#1749b3;
+
+}
+
+/* ================= RECOGNITION ================= */
+
+.recognition{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    text-align:center;
+
+}
+
+.recognition h2{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+#diagramName{
+
+    width:100%;
+
+    padding:16px;
+
+    border:2px solid #2563eb;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    margin-bottom:20px;
+
+}
+
+#recognizeBtn{
+
+    background:#10b981;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#recognizeBtn:hover{
+
+    background:#059669;
+
+}
+
+/* ================= STATUS ================= */
+
+.status{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:20px auto 50px;
+
+}
+
+.status-box{
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    color:#2563eb;
+
+    font-size:18px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:50px;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+}
