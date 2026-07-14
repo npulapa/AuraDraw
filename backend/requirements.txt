@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+opencv-python
+mediapipe
+numpy
+tensorflow
+pillow
+google-api-python-client
+python-multipart
